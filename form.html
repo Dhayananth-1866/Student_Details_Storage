@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+    <!--Input Form-->
+    <div class="container1">
+
+            <h1 style="color:  #1e3a5f">Input Form</h1>
+            <form>
+                <table border="1">
+                    
+                    <tr>
+                        <td>Name</td><td class="cls1"><input class="name1" id="name" type="text" placeholder="Enter Your Name" style="width: 98%; border: none; border-bottom: black 1px solid; outline: white; "></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Age</td><td><input id="age" type="number" placeholder="Enter Your Age" style="width: 98%; border: none; border-bottom:black 1px solid ; outline: white; "></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gender</td><td><input id="gender" class="male"
+                            type="radio" name="gender" value="Male" style="width: 9%;"> Male
+                            <input type="radio" class="female" name="gender" value="Female" >Female
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Course</td>
+                        <td><select id="course">
+                            <option>JavaScript</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                            <option>C</option>
+                            
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td>E-mail</td><td><input id="email" type="text" placeholder="Enter Your E-mail" style="width: 98%; border: none; border-bottom:black 1px solid ; outline: white; "></td>
+                    </tr>
+                    
+            <tr>
+                <td colspan="2"><button class="btn" type="button" id="btn1" style=" background-color:#4caf50; width: 100% ; cursor: pointer; padding: 7px; border-radius: 10px; color: white;">Save</button></td>
+                
+            </tr>
+        </table>
+    </form>
+
+
+    <!--Data Storage Form-->
+    <br>
+    <h1 style="color:  #1e3a5f">Data Storage</h1>
+    <form>
+        <table border="1">
+            <thead>
+                <tr>
+                <th>NAME</th><th>AGE</th><th>GENDER</th><th>COURSE</th><th>EMAIL</th><th>ACTION</th>
+            </tr>
+        </thead>
+        
+        <tbody id="body">
+               
+        </tbody>
+            
+        </table>
+    </form>
+
+    <script src="./stu.js"></script>
+</body>
+</div>
+</center>
+</html>
